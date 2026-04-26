@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+/* 1. Custom Keyframes */
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 2. Utility Animation Classes */
+.animate-fade-in {
+  animation: fade-in 1s ease-out forwards;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+/* 3. Staggered Delays */
+.delay-100 { animation-delay: 0.1s; }
+.delay-200 { animation-delay: 0.2s; }
+.delay-300 { animation-delay: 0.3s; }
+.delay-500 { animation-delay: 0.5s; }
+
+/* 4. THE DARK MODE TRANSITION (Crucial) */
+/* This ensures that when the 'dark' class is toggled on <html>, 
+   every element fades its colors smoothly over 500ms. */
+*, 
+*::before, 
+*::after {
+  transition-property: background-color, border-color, color, fill, stroke, opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+/* 5. Smooth Scroll & Selection */
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: #0ea5e9; /* sky-500 */
+  color: white;
+}
+/* The secret to smooth mode switching */
+*, *::before, *::after {
+  @apply transition-colors duration-500 ease-in-out;
+}
+
+/* Base colors for the body */
+body {
+  @apply bg-white text-slate-900 dark:bg-[#0b0f1a] dark:text-slate-100;
+}
