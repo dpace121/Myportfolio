@@ -64,7 +64,9 @@ const Navbar = () => {
           className="text-xl md:text-2xl font-bold tracking-wide text-white"
         >
           <span className="text-cyan-400">Dipesh</span>{" "}
-          <span className="text-slate-300">| Developer</span>
+          <span className="text-slate-300">| Developer</span>{" "}
+          <span className="text-slate-300">| Learner</span>
+
         </a>
 
         {/* Desktop Menu */}
