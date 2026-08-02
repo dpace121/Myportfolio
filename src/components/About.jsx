@@ -46,7 +46,7 @@ const About = () => {
               <p>
                 I thrive at the intersection of logic and design. My expertise lies in the 
                 <span className="text-white"> MERN Stack</span> and 
-                <span className="text-white"> Django</span>, where I build robust backends that 
+                <span className="text-white">Software Testing</span>, where I build robust backends that 
                 power seamless, high-performance user interfaces.
               </p>
               <p>

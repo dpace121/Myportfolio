@@ -58,7 +58,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-lg md:text-2xl text-gray-300 font-light italic">
-            Web Developer • React Developer • Artificial Intelligence Enthusiast
+            Web Developer • Software Tester • Artificial Intelligence Enthusiast
           </p>
 
           <p className="mt-6 text-gray-400 leading-relaxed max-w-2xl mx-auto text-base md:text-lg">
